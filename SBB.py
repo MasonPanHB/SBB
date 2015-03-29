@@ -106,8 +106,6 @@ for strCurrentBlogPostID in arrBlogPost :
   strBlogPostBody  = getBetween(strPageCode, "<!-- 正文开始 -->", "<!-- 正文结束 -->")
   strBlogPostBody  = \
       strBlogPostBody.replace("http://simg.sinajs.cn/blog7style/images/common/sg_trans.gif\" real_src =\"", "")
-  # strBlogPostBody  = strBlogPostBody.replace('src=""', "")
-  # strBlogPostBody  = strBlogPostBody.replace("real_src =", "src =")
 
   #Parse blog timestamp
   strBlogPostTime  = getBetween(strPageCode, '<span class="time SG_txtc">(', ')</span><div class="turnBoxzz">')
